@@ -1,0 +1,77 @@
+/**************************
+ ****** Tailwind CSS ******
+ **************************/
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/************************
+ ****** Variables ******
+ ***********************/
+
+$primary-color: #f46c6c;
+
+/*****************************************************
+ ****** Animated Underline Text Effect on Hover ******
+ *****************************************************/
+
+.hover\:underline,
+.focus\:underline {
+  position: relative;
+
+  &::before {
+    left: 50%;
+  }
+
+  &::after {
+    right: 50%;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    bottom: -3px;
+    background-color: $primary-color;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+  }
+}
+
+.hover\:underline:hover,
+.focus\:underline:focus {
+  &::before,
+  &::after {
+    width: 50%;
+    opacity: 1;
+  }
+}
+
+/********************************************
+ ****** Lines on both Sides of Heading ******
+ ********************************************/
+
+.lines-on-sides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before,
+  &::after {
+    content: "";
+    flex-grow: 1;
+    height: 2px;
+    background-color: $primary-color;
+  }
+
+  &::before {
+    margin-right: 1rem;
+  }
+
+  &::after {
+    margin-left: 1rem;
+  }
+}
