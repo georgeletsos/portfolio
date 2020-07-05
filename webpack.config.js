@@ -41,6 +41,7 @@ module.exports = {
     }),
     new FaviconsWebpackPlugin({
       logo: "./src/assets/favicon.svg",
+      publicPath: ".",
       prefix: "favicons/",
       favicons: {
         background: "#e2e8f0",
