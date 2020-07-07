@@ -8,7 +8,7 @@
   <body class="bg-gray-900" style="opacity: 0;">
     <header class="px-4 pt-4 max-w-screen-lg mx-auto">
       <div class="flex justify-center items-center flex-col md:flex-row">
-        <div class="flex flex-col justify-center items-center">
+        <section id="contact" class="flex flex-col justify-center items-center">
           <svg
             data-svgid="avatar"
             class="w-32 md:w-56 h-32 md:h-56 bg-gray-300 shadow-border-red rounded-full"
@@ -45,8 +45,8 @@
               ></svg>
             </a>
           </div>
-        </div>
-        <div class="mt-4 md:mt-0 md:ml-4">
+        </section>
+        <section id="introduction" class="mt-4 md:mt-0 md:ml-4">
           <h1
             class="text-gray-300 text-3xl font-medium text-center md:text-left tracking-tight leading-tight"
           >
@@ -75,18 +75,18 @@
               <span class="ml-2">DOWNLOAD RESUME</span>
             </a>
           </div>
-        </div>
+        </section>
       </div>
     </header>
     <main class="px-4 mt-4 max-w-screen-lg mx-auto">
-      <div id="projects">
+      <section id="projects">
         <h1
           class="text-gray-300 text-3xl font-medium tracking-tight leading-tight lines-on-sides"
         >
           Projects
         </h1>
         <div class="mt-4 -mx-2 flex flex-col md:flex-row flex-wrap">
-          <div class="px-2 w-full md:w-1/2">
+          <article class="px-2 w-full md:w-1/2">
             <div class="bg-gray-900 shadow-border-red rounded-lg">
               <div class="p-4">
                 <div class="text-red-500 text-sm font-semibold tracking-wide">
@@ -125,8 +125,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="px-2 w-full md:w-1/2">
+          </article>
+          <article class="px-2 w-full md:w-1/2">
             <div class="mt-4 md:mt-0 bg-gray-900 shadow-border-red rounded-lg">
               <div class="p-4">
                 <div
@@ -157,8 +157,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="px-2 w-full">
+          </article>
+          <article class="px-2 w-full">
             <div class="mt-4 bg-gray-900 shadow-border-red rounded-lg">
               <div class="p-4">
                 <div class="text-red-500 text-sm font-semibold tracking-wide">
@@ -199,14 +199,17 @@
                 </div>
               </div>
             </div>
-          </div>
+          </article>
         </div>
-      </div>
+      </section>
     </main>
     <footer class="px-4 pb-4 mt-4 max-w-screen-lg mx-auto">
-      <p class="text-red-500 text-sm font-semibold text-center">
+      <section
+        id="copyright"
+        class="text-red-500 text-sm font-semibold text-center"
+      >
         © 2020 George Letsos
-      </p>
+      </section>
     </footer>
   </body>
 </html>
