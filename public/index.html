@@ -14,11 +14,17 @@
   <body class="bg-gray-900" style="opacity: 0;">
     <header class="px-4 pt-4 max-w-screen-lg mx-auto">
       <div class="flex justify-center items-center flex-col md:flex-row">
-        <section id="contact" class="flex flex-col justify-center items-center">
-          <svg
-            data-svgid="avatar"
-            class="w-32 md:w-56 h-32 md:h-56 bg-gray-300 shadow-border-red rounded-full"
-          ></svg>
+        <section
+          class="flex flex-col justify-center items-center"
+          aria-label="Contact"
+        >
+          <div>
+            <svg
+              data-svgid="avatar"
+              class="w-32 md:w-56 h-32 md:h-56 bg-gray-300 shadow-border-red rounded-full"
+            ></svg>
+            <span class="sr-only">George Letsos</span>
+          </div>
           <div class="mt-4 w-full flex justify-evenly items-center">
             <a
               class="text-gray-300 hover:text-gray-400 focus:text-gray-400 transition-transform duration-150 transform hover:scale-110 focus:scale-110"
@@ -58,7 +64,7 @@
             </a>
           </div>
         </section>
-        <section id="introduction" class="mt-4 md:mt-0 md:ml-4">
+        <section class="mt-4 md:mt-0 md:ml-4" aria-label="Introduction">
           <h1
             class="text-gray-300 text-3xl font-medium text-center md:text-left tracking-tight leading-tight"
           >
@@ -92,140 +98,143 @@
       </div>
     </header>
     <main class="px-4 mt-4 max-w-screen-lg mx-auto">
-      <section id="projects">
-        <h2
-          class="text-gray-300 text-3xl font-medium tracking-tight leading-tight lines-on-sides"
+      <h2
+        class="text-gray-300 text-3xl font-medium tracking-tight leading-tight lines-on-sides"
+      >
+        Projects
+      </h2>
+      <div class="mt-4 -mx-2 flex flex-col md:flex-row flex-wrap">
+        <article
+          class="px-2 w-full md:w-1/2"
+          role="region"
+          aria-label="Lightning Ygo Card Catalog"
         >
-          Projects
-        </h2>
-        <div class="mt-4 -mx-2 flex flex-col md:flex-row flex-wrap">
-          <article class="px-2 w-full md:w-1/2">
-            <div class="bg-gray-900 shadow-border-red rounded-lg">
-              <div class="p-4">
-                <div class="text-red-500 text-sm font-semibold tracking-wide">
-                  JavaScript &bull; Vue.js &bull; Vuex &bull; Bootstrap
-                </div>
-                <h3 class="text-gray-300 text-lg font-semibold">
-                  Lightning Ygo Card Catalog
-                </h3>
-                <p class="mt-4 text-gray-300">
-                  Yu-Gi-Oh! Duel Links Card Catalog based on the mobile/Steam
-                  game.
-                </p>
-                <div class="mt-4 flex text-sm font-semibold tracking-wide">
-                  <a
-                    class="text-gray-300 flex items-center hover:underline focus:underline"
-                    href="https://lightning-ygo.herokuapp.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    See Project
-                    <svg
-                      data-svgid="external-link"
-                      class="ml-1 w-4 h-4 fill-current"
-                    ></svg>
-                  </a>
-                  <a
-                    class="ml-4 text-gray-300 flex items-center hover:underline focus:underline"
-                    href="https://github.com/georgeletsos/lightning-ygo"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub Repo
-                    <svg
-                      data-svgid="external-link"
-                      class="ml-1 w-4 h-4 fill-current"
-                    ></svg>
-                  </a>
-                </div>
+          <div class="bg-gray-900 shadow-border-red rounded-lg">
+            <div class="p-4">
+              <div class="text-red-500 text-sm font-semibold tracking-wide">
+                JavaScript &bull; Vue.js &bull; Vuex &bull; Bootstrap
               </div>
-            </div>
-          </article>
-          <article class="px-2 w-full md:w-1/2">
-            <div class="mt-4 md:mt-0 bg-gray-900 shadow-border-red rounded-lg">
-              <div class="p-4">
-                <div
-                  class="text-red-500 text-sm font-semibold tracking-wide md:truncate"
+              <h3 class="text-gray-300 text-lg font-semibold">
+                Lightning Ygo Card Catalog
+              </h3>
+              <p class="mt-4 text-gray-300">
+                Yu-Gi-Oh! Duel Links Card Catalog based on the mobile/Steam
+                game.
+              </p>
+              <div class="mt-4 flex text-sm font-semibold tracking-wide">
+                <a
+                  class="text-gray-300 flex items-center hover:underline focus:underline"
+                  href="https://lightning-ygo.herokuapp.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  JavaScript &bull; Node.js &bull; Express.js &bull; MongoDB
-                  &bull; Mongoose ODM
-                </div>
-                <h3 class="text-gray-300 text-lg font-semibold">
-                  Lightning Ygo API
-                </h3>
-                <p class="mt-4 text-gray-300">
-                  Yu-Gi-Oh! Duel Links API based on the API provided by
-                  YGOPRODECK.
-                </p>
-                <div class="mt-4 flex text-sm font-semibold tracking-wide">
-                  <a
-                    class="text-gray-300 flex items-center hover:underline focus:underline"
-                    href="https://github.com/georgeletsos/lightning-ygo-api"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub Repo
-                    <svg
-                      data-svgid="external-link"
-                      class="ml-1 w-4 h-4 fill-current"
-                    ></svg>
-                  </a>
-                </div>
+                  See Project
+                  <svg
+                    data-svgid="external-link"
+                    class="ml-1 w-4 h-4 fill-current"
+                  ></svg>
+                </a>
+                <a
+                  class="ml-4 text-gray-300 flex items-center hover:underline focus:underline"
+                  href="https://github.com/georgeletsos/lightning-ygo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub Repo
+                  <svg
+                    data-svgid="external-link"
+                    class="ml-1 w-4 h-4 fill-current"
+                  ></svg>
+                </a>
               </div>
             </div>
-          </article>
-          <article class="px-2 w-full">
-            <div class="mt-4 bg-gray-900 shadow-border-red rounded-lg">
-              <div class="p-4">
-                <div class="text-red-500 text-sm font-semibold tracking-wide">
-                  JavaScript &bull; Node.js &bull; MongoDB &bull; Mongoose ODM
-                  &bull; Socket.IO
-                </div>
-                <h3 class="text-gray-300 text-lg font-semibold">
-                  Concurrent Chat
-                </h3>
-                <p class="mt-4 text-gray-300">
-                  Chat application that utilizes concurrency in JavaScript, both
-                  on the client and the server side. It's based on Discord —
-                  Chat for Communities and Friends.
-                </p>
-                <div class="mt-4 flex text-sm font-semibold tracking-wide">
-                  <a
-                    class="text-gray-300 flex items-center hover:underline focus:underline"
-                    href="https://concurrent-chat-gl.herokuapp.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    See Project
-                    <svg
-                      data-svgid="external-link"
-                      class="ml-1 w-4 h-4 fill-current"
-                    ></svg>
-                  </a>
-                  <a
-                    class="ml-4 text-gray-300 flex items-center hover:underline focus:underline"
-                    href="https://github.com/georgeletsos/concurrent-chat"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub Repo
-                    <svg
-                      data-svgid="external-link"
-                      class="ml-1 w-4 h-4 fill-current"
-                    ></svg>
-                  </a>
-                </div>
+          </div>
+        </article>
+        <article
+          class="px-2 w-full md:w-1/2"
+          role="region"
+          aria-label="Lightning Ygo API"
+        >
+          <div class="mt-4 md:mt-0 bg-gray-900 shadow-border-red rounded-lg">
+            <div class="p-4">
+              <div
+                class="text-red-500 text-sm font-semibold tracking-wide md:truncate"
+              >
+                JavaScript &bull; Node.js &bull; Express.js &bull; MongoDB
+                &bull; Mongoose ODM
+              </div>
+              <h3 class="text-gray-300 text-lg font-semibold">
+                Lightning Ygo API
+              </h3>
+              <p class="mt-4 text-gray-300">
+                Yu-Gi-Oh! Duel Links API based on the API provided by
+                YGOPRODECK.
+              </p>
+              <div class="mt-4 flex text-sm font-semibold tracking-wide">
+                <a
+                  class="text-gray-300 flex items-center hover:underline focus:underline"
+                  href="https://github.com/georgeletsos/lightning-ygo-api"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub Repo
+                  <svg
+                    data-svgid="external-link"
+                    class="ml-1 w-4 h-4 fill-current"
+                  ></svg>
+                </a>
               </div>
             </div>
-          </article>
-        </div>
-      </section>
+          </div>
+        </article>
+        <article class="px-2 w-full" role="region" aria-label="Concurrent Chat">
+          <div class="mt-4 bg-gray-900 shadow-border-red rounded-lg">
+            <div class="p-4">
+              <div class="text-red-500 text-sm font-semibold tracking-wide">
+                JavaScript &bull; Node.js &bull; MongoDB &bull; Mongoose ODM
+                &bull; Socket.IO
+              </div>
+              <h3 class="text-gray-300 text-lg font-semibold">
+                Concurrent Chat
+              </h3>
+              <p class="mt-4 text-gray-300">
+                Chat application that utilizes concurrency in JavaScript, both
+                on the client and the server side. It's based on Discord — Chat
+                for Communities and Friends.
+              </p>
+              <div class="mt-4 flex text-sm font-semibold tracking-wide">
+                <a
+                  class="text-gray-300 flex items-center hover:underline focus:underline"
+                  href="https://concurrent-chat-gl.herokuapp.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  See Project
+                  <svg
+                    data-svgid="external-link"
+                    class="ml-1 w-4 h-4 fill-current"
+                  ></svg>
+                </a>
+                <a
+                  class="ml-4 text-gray-300 flex items-center hover:underline focus:underline"
+                  href="https://github.com/georgeletsos/concurrent-chat"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub Repo
+                  <svg
+                    data-svgid="external-link"
+                    class="ml-1 w-4 h-4 fill-current"
+                  ></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
     </main>
     <footer class="px-4 pb-4 mt-4 max-w-screen-lg mx-auto">
-      <section
-        id="copyright"
-        class="text-red-500 text-sm font-semibold text-center"
-      >
+      <section class="text-red-500 text-sm font-semibold text-center">
         © 2020 George Letsos
       </section>
     </footer>
