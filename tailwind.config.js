@@ -1,5 +1,5 @@
 const red = "#f46c6c";
-const { colors } = require("tailwindcss/defaultTheme");
+const { colors, fontFamily } = require("tailwindcss/defaultTheme");
 
 module.exports = {
   purge: [],
@@ -31,6 +31,9 @@ module.exports = {
       boxShadow: {
         "border-red": `0 0 0 2px ${red}`,
         "red-outline": `0 0 0 3px ${red}80`
+      },
+      fontFamily: {
+        sans: ["Montserrat", ...fontFamily.sans]
       }
     }
   },
