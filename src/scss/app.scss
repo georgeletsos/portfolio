@@ -10,6 +10,57 @@
 
 @import "tailwindcss/base";
 @import "tailwindcss/components";
+
+.btn-round {
+  @apply text-gray-300 transition-transform duration-150 transform rounded-full;
+}
+
+.btn-round:hover {
+  @apply text-gray-400 scale-110;
+}
+
+.btn-round:focus {
+  @apply text-gray-400 scale-110 outline-none shadow-outline;
+}
+
+.btn-round-icon {
+  @apply w-9 h-9 fill-current;
+}
+
+@screen md {
+  .btn-round-icon {
+    @apply w-12 h-12;
+  }
+}
+
+.project {
+  @apply p-4 shadow-border-red rounded-lg;
+}
+
+.project-eyebrow {
+  @apply text-red-500 text-sm font-semibold tracking-wide;
+}
+
+.project-title {
+  @apply text-gray-300 text-lg font-semibold;
+}
+
+.project-description {
+  @apply mt-4 text-gray-300;
+}
+
+.project-links-group {
+  @apply mt-4 flex text-sm font-semibold tracking-wide;
+}
+
+.project-link {
+  @apply text-gray-300 flex items-center;
+}
+
+.project-link-icon {
+  @apply ml-1 w-4 h-4 fill-current;
+}
+
 @import "tailwindcss/utilities";
 
 /************************
